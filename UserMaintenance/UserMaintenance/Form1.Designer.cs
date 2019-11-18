@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.listUsers = new System.Windows.Forms.ListBox();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -46,46 +45,28 @@
             this.listUsers.Size = new System.Drawing.Size(211, 264);
             this.listUsers.TabIndex = 0;
             // 
-            // lblLastName
+            // lblFullName
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblLastName.Location = new System.Drawing.Point(235, 16);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(51, 20);
-            this.lblLastName.TabIndex = 1;
-            this.lblLastName.Text = "label1";
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblFullName.Location = new System.Drawing.Point(235, 16);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(51, 20);
+            this.lblFullName.TabIndex = 1;
+            this.lblFullName.Text = "label1";
             // 
-            // txtLastName
+            // txtFullName
             // 
-            this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtLastName.Location = new System.Drawing.Point(346, 12);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(205, 26);
-            this.txtLastName.TabIndex = 2;
-            // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblFirstName.Location = new System.Drawing.Point(235, 48);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(51, 20);
-            this.lblFirstName.TabIndex = 3;
-            this.lblFirstName.Text = "label2";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtFirstName.Location = new System.Drawing.Point(346, 45);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(205, 26);
-            this.txtFirstName.TabIndex = 4;
+            this.txtFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtFullName.Location = new System.Drawing.Point(346, 12);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(205, 26);
+            this.txtFullName.TabIndex = 2;
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnAdd.Location = new System.Drawing.Point(239, 87);
+            this.btnAdd.Location = new System.Drawing.Point(239, 55);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(312, 36);
             this.btnAdd.TabIndex = 5;
@@ -93,16 +74,26 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSave.Location = new System.Drawing.Point(239, 97);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(312, 36);
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "button2";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 286);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.lblFirstName);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.listUsers);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -114,11 +105,10 @@
         #endregion
 
         private System.Windows.Forms.ListBox listUsers;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 
